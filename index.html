@@ -16,11 +16,12 @@
         <section>
             <form>
                 <!-- <label for="busca">Buscar Atletas Olímpicos Brasileiros:</label> -->
-                <input type="text" id="busca" name="busca" placeholder="Digite o nome do Atleta">
+                <input type="text" id="searchField" name="busca" placeholder="Digite o nome do Atleta">
                 <button onclick="searchAthletes()">Buscar</button>
             </form>
         </section>
         <section class="resultados-pesquisa">
+            <div id="results"></div>
             <div class="item-resultado">
                 <h2>
                     <a href="#">Rebeca Andrade</a>
@@ -43,10 +44,10 @@
                 <a href="https://pt.wikipedia.org/wiki/Rayssa_Leal" target="_blank">Mais informações</a>
             </div>
         </section>
-        <script src="/assets/app.js"></script>
     </main>
     <footer>
         <p>2024 - Atletas do Brasil &copy;. Todos os direitos reservados. </p>
     </footer>
+    <script src="/assets/app.js"></script>
 </body>
 </html>
