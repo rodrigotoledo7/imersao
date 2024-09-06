@@ -6,7 +6,7 @@ function pesquisaAtletas() {
     let searchField = document.getElementById("searchField").value;
 
     if (!searchField) {
-        section.innerHTML = "<p>Nada foi encontrado. Você precisa digitar o nome de um atleta ou esporte</p>"
+        section.innerHTML = "<p>Você precisa digitar o nome de um atleta ou esporte.</p>"
         return 
     }
 
@@ -37,7 +37,9 @@ function pesquisaAtletas() {
         `;
         }
     }
-  
+    if (!resultados) {
+        resultados = "<p>Nada foi encontrado</p>"
+    }
     
     // Atribui o HTML gerado à seção de resultados
     section.innerHTML = resultados;
